@@ -8,11 +8,12 @@ const config: HardhatUserConfig = {
   solidity: '0.8.19',
   networks: {
     swisstronik: {
-      url: 'https://json-rpc.testnet.swisstronik.com/', //URL of the RPC node for Swisstronik.
-      accounts: [`0x${process.env.PRIVATE_KEY}`], //Your private key starting with "0x"
-      //Make sure you have enough funds in this wallet to deploy the smart contract
+      url: 'https://json-rpc.testnet.swisstronik.com/', // URL dari RPC node untuk Swisstronik
+      accounts: [`0x15105783190e1902a1c9a33b9befb74f0e9468fe91588743c461a413507d1fc4`], // Kunci pribadi Anda harus benar-benar valid
+      // Pastikan Anda memiliki cukup dana di dompet ini untuk meng-deploy kontrak pintar
     },
   },
 }
 
 export default config
+
